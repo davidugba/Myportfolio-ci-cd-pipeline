@@ -3,18 +3,6 @@ import React from 'react';
 function Projects() {
   const projects = [
     {
-      id: 'aws-static-website',
-      name: 'Production Static Website on AWS',
-      description: 'Deployed a highly available static website using AWS S3, CloudFront CDN for global distribution, Route 53 for DNS management, and ACM for SSL/TLS certificates. Implemented automated CI/CD pipeline with GitHub Actions for continuous deployment. Achieved ~$1.50/month hosting cost with 99.99% uptime.',
-      html_url: 'https://github.com/davidugba/Myportfolio',
-      homepage: 'https://davidugba.com',
-      language: 'Infrastructure',
-      technologies: ['AWS S3', 'CloudFront', 'Route 53', 'ACM', 'GitHub Actions', 'Terraform'],
-      stargazers_count: 0,
-      fork: false,
-      featured: true
-    },
-    {
       id: 'cicd-pipeline',
       name: 'Automated CI/CD Pipeline',
       description: 'Built a complete CI/CD pipeline using GitHub Actions that automatically builds, tests, and deploys React applications to AWS S3 with CloudFront cache invalidation on every push to master branch.',
@@ -83,13 +71,7 @@ function Projects() {
           {projects.map((project, index) => {
             // Custom icons for each project
             const getProjectIcon = () => {
-              if (project.id === 'aws-static-website') {
-                return (
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M4.93 4.93C3.12 6.74 2 9.24 2 12s1.12 5.26 2.93 7.07l1.41-1.41C4.9 16.21 4 14.21 4 12s.9-4.21 2.34-5.66L4.93 4.93zM17.66 6.34C19.1 7.79 20 9.79 20 12s-.9 4.21-2.34 5.66l1.41 1.41C20.88 17.26 22 14.76 22 12s-1.12-5.26-2.93-7.07l-1.41 1.41zM7.76 7.76C6.67 8.85 6 10.35 6 12s.67 3.15 1.76 4.24l1.41-1.41C8.45 14.11 8 13.11 8 12s.45-2.11 1.17-2.83L7.76 7.76zM12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm4.24 1.76C17.33 10.67 18 9.65 18 12s-.67 3.15-1.76 4.24l-1.41-1.41C15.55 13.89 16 12.89 16 12s-.45-2.11-1.17-2.83l1.41-1.41z"/>
-                  </svg>
-                );
-              } else if (project.id === 'cicd-pipeline') {
+              if (project.id === 'cicd-pipeline') {
                 return (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
