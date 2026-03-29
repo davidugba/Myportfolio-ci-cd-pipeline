@@ -21,11 +21,10 @@ function About(){
                                 <p>David Ugba</p>
                             </div>
                             <div>
-                                <h4>Experience:</h4>
-                                <p>3+ years</p>
+                                <h4>Location:</h4>
+                                <p>Valletta Malta</p>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 
